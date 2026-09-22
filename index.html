@@ -1,72 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tecnosaude — gestão inteligente de treinos, nutrição e evolução." />
-  <title>Tecnosaude | Performance e saúde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Franko Consultoria — planejamento personalizado de treino e dieta para o seu objetivo.">
+  <title>Franko Consultoria | Seu objetivo. Nossa estratégia.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <a class="brand" href="#inicio" aria-label="Tecnosaude início">
-        <span class="brand-mark">T</span>
-        <span><strong>Tecno</strong>saude<small>performance & saúde</small></span>
-      </a>
-      <div class="profile-card">
-        <div class="avatar">DF</div>
-        <div><strong>Dr. Franko</strong><span>Nutrição & Treino</span></div>
-        <button class="more" aria-label="Mais opções">•••</button>
-      </div>
-      <nav class="nav-menu" aria-label="Navegação principal">
-        <p class="nav-label">MENU PRINCIPAL</p>
-        <a class="nav-link active" href="#inicio" data-view="inicio"><span>⌂</span> Visão geral</a>
-        <a class="nav-link" href="#clientes" data-view="clientes"><span>♙</span> Clientes <b>24</b></a>
-        <a class="nav-link" href="#treinos" data-view="treinos"><span>◈</span> Treinos</a>
-        <a class="nav-link" href="#dietas" data-view="dietas"><span>✦</span> Dietas</a>
-        <a class="nav-link" href="#evolucao" data-view="evolucao"><span>↗</span> Evolução</a>
-        <p class="nav-label spaced">GESTÃO</p>
-        <a class="nav-link" href="#agenda" data-view="agenda"><span>▣</span> Agenda <b class="dot">3</b></a>
-        <a class="nav-link" href="#mensagens" data-view="mensagens"><span>□</span> Mensagens <b class="dot">5</b></a>
-        <a class="nav-link" href="#configuracoes" data-view="configuracoes"><span>⚙</span> Configurações</a>
-      </nav>
-      <div class="sidebar-bottom"><div class="help-icon">?</div><div><strong>Precisa de ajuda?</strong><span>Fale com o suporte</span></div><button class="chevron">›</button></div>
-    </aside>
+  <header class="site-header" id="inicio">
+    <a class="logo" href="#inicio"><span class="logo-mark">F</span><span>FRANKO <b>CONSULTORIA</b></span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#como-funciona">Como funciona</a><a href="#planos">Planos</a><a href="#comece">Começar agora</a></nav>
+    <a href="#planos" class="header-cta">COMEÇAR AGORA <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </header>
 
-    <main class="main-content">
-      <header class="topbar">
-        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
-        <div class="breadcrumb"><span>Workspace</span><i>/</i><strong id="pageName">Visão geral</strong></div>
-        <div class="top-actions"><button class="icon-button" aria-label="Buscar">⌕</button><button class="icon-button notification" aria-label="Notificações">♧<em></em></button><div class="top-avatar">DF</div></div>
-      </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="kicker">CONSULTORIA ONLINE · PERFORMANCE & SAÚDE</p><h1>SEU OBJETIVO.<br><em>NOSSA ESTRATÉGIA.</em></h1><p class="hero-subtitle">Um planejamento pensado para você, sua rotina e seu objetivo.</p><p class="hero-text">Chega de treinar sem direção ou seguir uma dieta que não se encaixa na sua realidade. Aqui, cada planejamento é feito de acordo com as informações que você fornece.</p><a href="#planos" class="button button-primary">QUERO COMEÇAR <span>→</span></a><p class="hero-quote">“A evolução começa quando você decide levar seu objetivo a sério.”</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-ring"></div><div class="art-grid"></div><div class="art-number">01</div><div class="art-label">DISCIPLINA<br><b>CONSTÂNCIA</b><br>RESULTADO</div><div class="art-line"></div></div>
+    </section>
 
-      <section class="page" id="inicio">
-        <div class="welcome-row"><div><p class="eyebrow">TERÇA-FEIRA, 22 DE SETEMBRO DE 2026</p><h1>Bom dia, Franko <span>✦</span></h1><p class="muted">Aqui está o resumo do seu workspace hoje.</p></div><button class="primary-btn" id="newClient">＋ Novo cliente</button></div>
-        <div class="metrics-grid">
-          <article class="metric-card"><div class="metric-icon blue">♙</div><div><span>Clientes ativos</span><strong>24</strong><small class="positive">↗ 12,5% <i>vs. mês passado</i></small></div><div class="spark blue-spark">⌁</div></article>
-          <article class="metric-card"><div class="metric-icon green">✓</div><div><span>Treinos concluídos</span><strong>186</strong><small class="positive">↗ 8,2% <i>vs. mês passado</i></small></div><div class="spark green-spark">⌁</div></article>
-          <article class="metric-card"><div class="metric-icon violet">◒</div><div><span>Adesão média</span><strong>87,4<small>%</small></strong><small class="positive">↗ 4,1% <i>vs. mês passado</i></small></div><div class="spark violet-spark">⌁</div></article>
-          <article class="metric-card"><div class="metric-icon orange">◷</div><div><span>Consultas hoje</span><strong>06</strong><small class="neutral">Próxima às 10:30</small></div><div class="spark orange-spark">⌁</div></article>
-        </div>
-        <div class="content-grid"><article class="panel progress-panel"><div class="panel-heading"><div><h2>Evolução dos clientes</h2><p>Acompanhamento de peso médio</p></div><select><option>Últimos 30 dias</option><option>Últimos 90 dias</option></select></div><div class="chart"><div class="chart-y"><span>85kg</span><span>80kg</span><span>75kg</span><span>70kg</span><span>65kg</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 680 230" preserveAspectRatio="none" aria-label="Gráfico de evolução"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#16a58a" stop-opacity=".25"/><stop offset="1" stop-color="#16a58a" stop-opacity="0"/></linearGradient></defs><path d="M0 164 C50 150 74 169 108 145 S165 132 195 146 S245 111 280 125 S330 88 360 109 S410 80 445 89 S500 70 530 78 S575 38 610 61 S660 35 680 42 L680 230 L0 230Z" fill="url(#fill)"/><path d="M0 164 C50 150 74 169 108 145 S165 132 195 146 S245 111 280 125 S330 88 360 109 S410 80 445 89 S500 70 530 78 S575 38 610 61 S660 35 680 42" fill="none" stroke="#16a58a" stroke-width="3" stroke-linecap="round"/><circle cx="610" cy="61" r="5" fill="#fff" stroke="#16a58a" stroke-width="3"/></svg><div class="chart-x"><span>01 Set</span><span>08 Set</span><span>15 Set</span><span>22 Set</span></div></div></div></article>
-          <article class="panel appointments"><div class="panel-heading"><div><h2>Próximos atendimentos</h2><p>Você tem 6 hoje</p></div><a href="#agenda">Ver agenda <span>→</span></a></div><div class="appointment"><div class="time">10:30<small>AM</small></div><div class="person"><div class="mini-avatar pink">AS</div><div><strong>Ana Souza</strong><span>Reavaliação física</span></div></div><span class="status confirmed">Confirmado</span></div><div class="appointment"><div class="time">13:00<small>PM</small></div><div class="person"><div class="mini-avatar blue-bg">RC</div><div><strong>Rafael Costa</strong><span>Acompanhamento nutricional</span></div></div><span class="status pending">Pendente</span></div><div class="appointment"><div class="time">15:30<small>PM</small></div><div class="person"><div class="mini-avatar yellow">LM</div><div><strong>Lucas Mendes</strong><span>Montagem de treino</span></div></div><span class="status confirmed">Confirmado</span></div><button class="outline-btn">+ Ver todos os atendimentos</button></article></div>
-        <div class="bottom-grid"><article class="panel clients-panel"><div class="panel-heading"><div><h2>Clientes recentes</h2><p>Atividade dos seus clientes</p></div><a href="#clientes">Ver todos <span>→</span></a></div><div class="table-wrap"><table><thead><tr><th>CLIENTE</th><th>OBJETIVO</th><th>ADESÃO</th><th>ÚLTIMA ATIVIDADE</th><th></th></tr></thead><tbody><tr><td><div class="person"><div class="mini-avatar pink">AS</div><div><strong>Ana Souza</strong><span>ana.souza@email.com</span></div></div></td><td><span class="tag purple">Emagrecimento</span></td><td><div class="adherence"><span style="width:94%"></span></div><strong>94%</strong></td><td>Hoje, 08:42</td><td><button class="row-more">•••</button></td></tr><tr><td><div class="person"><div class="mini-avatar blue-bg">RC</div><div><strong>Rafael Costa</strong><span>rafael.costa@email.com</span></div></div></td><td><span class="tag blue-tag">Hipertrofia</span></td><td><div class="adherence"><span style="width:81%"></span></div><strong>81%</strong></td><td>Ontem, 19:20</td><td><button class="row-more">•••</button></td></tr><tr><td><div class="person"><div class="mini-avatar yellow">LM</div><div><strong>Lucas Mendes</strong><span>lucas.mendes@email.com</span></div></div></td><td><span class="tag orange-tag">Performance</span></td><td><div class="adherence"><span style="width:76%"></span></div><strong>76%</strong></td><td>20 Set, 16:05</td><td><button class="row-more">•••</button></td></tr></tbody></table></div></article><article class="panel actions-panel"><div class="panel-heading"><div><h2>Acesso rápido</h2><p>Comece uma nova tarefa</p></div></div><button class="quick-action" data-action="treino"><span class="quick-icon green">▣</span><span><strong>Montar novo treino</strong><small>Crie um plano personalizado</small></span><b>→</b></button><button class="quick-action" data-action="dieta"><span class="quick-icon blue">✦</span><span><strong>Montar nova dieta</strong><small>Planeje refeições e macros</small></span><b>→</b></button><button class="quick-action" data-action="checkin"><span class="quick-icon violet">↗</span><span><strong>Ver check-ins</strong><small>Confira o progresso recente</small></span><b>→</b></button></article></div>
-      </section>
-      <section class="placeholder-view" id="clientes"><div class="empty-icon">♙</div><h2>Clientes</h2><p>Gerencie seus clientes, anamneses e planos personalizados por aqui.</p><button class="primary-btn" id="newClient2">＋ Cadastrar cliente</button></section>
-      <section class="placeholder-view" id="treinos"><div class="empty-icon">◈</div><h2>Treinos</h2><p>Monte treinos completos com exercícios, séries, carga e progressão.</p><button class="primary-btn">＋ Criar treino</button></section>
-      <section class="placeholder-view" id="dietas"><div class="empty-icon">✦</div><h2>Dietas</h2><p>Organize refeições, macronutrientes, substituições e suplementação.</p><button class="primary-btn">＋ Criar dieta</button></section>
-      <section class="placeholder-view" id="evolucao"><div class="empty-icon">↗</div><h2>Evolução</h2><p>Acompanhe medidas, adesão, peso e resultados dos seus clientes.</p></section>
-      <section class="placeholder-view" id="agenda"><div class="empty-icon">▣</div><h2>Agenda</h2><p>Seus próximos atendimentos e reavaliações aparecerão aqui.</p></section>
-      <section class="placeholder-view" id="mensagens"><div class="empty-icon">□</div><h2>Mensagens</h2><p>Centralize a comunicação com seus clientes.</p></section>
-      <section class="placeholder-view" id="configuracoes"><div class="empty-icon">⚙</div><h2>Configurações</h2><p>Personalize seu perfil e as preferências da Tecnosaude.</p></section>
-    </main>
-  </div>
-  <div class="modal-backdrop" id="modal"><div class="modal"><button class="close-modal" id="closeModal">×</button><div class="modal-symbol">＋</div><h2>Novo cliente</h2><p>Cadastre os dados básicos para começar o acompanhamento.</p><form id="clientForm"><label>Nome completo<input required placeholder="Ex.: Marina Oliveira" /></label><label>E-mail<input type="email" required placeholder="cliente@email.com" /></label><label>Objetivo<select><option>Emagrecimento</option><option>Hipertrofia</option><option>Performance</option><option>Saúde geral</option></select></label><button class="primary-btn" type="submit">Cadastrar cliente</button></form></div></div>
-  <div class="toast" id="toast">Cliente cadastrado com sucesso! <span>✓</span></div>
+    <section class="trust-strip"><span>PLANEJAMENTO INDIVIDUAL</span><i></i><span>ESTRATÉGIA REALISTA</span><i></i><span>ACOMPANHAMENTO COM PROPÓSITO</span></section>
+
+    <section class="section process-section" id="como-funciona"><div class="section-heading"><p class="kicker">O PROCESSO</p><h2>COMO <em>FUNCIONA</em></h2><p>Um caminho simples para transformar intenção em ação.</p></div><div class="process-grid"><article><span>01</span><div class="step-icon">↗</div><h3>Você escolhe seu plano</h3><p>Escolha entre Treino, Dieta ou Treino + Dieta.</p></article><article><span>02</span><div class="step-icon">⌁</div><h3>Você conta tudo sobre você</h3><p>Preencha suas informações, rotina, objetivo, preferências e dificuldades.</p></article><article><span>03</span><div class="step-icon">◌</div><h3>Eu analiso suas informações</h3><p>Suas respostas ajudam a entender melhor a sua realidade.</p></article><article><span>04</span><div class="step-icon">✦</div><h3>Seu planejamento é preparado</h3><p>Seu planejamento personalizado é elaborado a partir do que você compartilhou.</p></article></div><p class="section-quote">Você não precisa fazer tudo sozinho. <strong>Precisa apenas começar.</strong></p></section>
+
+    <section class="quote-banner"><p>“Seu objetivo merece mais do que um treino aleatório.”</p><span>FRANKO CONSULTORIA</span></section>
+
+    <section class="section plans-section" id="planos"><div class="section-heading"><p class="kicker">ESCOLHA O SEU CAMINHO</p><h2>PLANOS <em>PERSONALIZADOS</em></h2><p>Você entra com a dedicação. Eu entro com a estratégia.</p></div><div class="plans-grid">
+      <article class="plan-card" data-plan="Treino"><div class="plan-top"><span class="plan-index">01</span><span class="plan-icon">◈</span></div><h3>TREINO</h3><p>Para quem quer treinar com estratégia e organização.</p><ul><li>Treino personalizado</li><li>Exercícios selecionados de acordo com o objetivo</li><li>Séries e repetições</li><li>Organização da rotina de treino</li><li>Orientações para execução</li></ul><button class="plan-select">ESCOLHER TREINO <span>→</span></button></article>
+      <article class="plan-card" data-plan="Dieta"><div class="plan-top"><span class="plan-index">02</span><span class="plan-icon">✦</span></div><h3>DIETA</h3><p>Para quem quer organizar sua alimentação de acordo com sua rotina e objetivo.</p><ul><li>Planejamento alimentar personalizado</li><li>Organização das refeições</li><li>Quantidades</li><li>Adaptação aos alimentos que você gosta</li><li>Estratégia de acordo com a rotina</li></ul><button class="plan-select">ESCOLHER DIETA <span>→</span></button></article>
+      <article class="plan-card featured" data-plan="Treino + Dieta"><div class="featured-label">ESTRATÉGIA COMPLETA</div><div class="plan-top"><span class="plan-index">03</span><span class="plan-icon">✧</span></div><h3>TREINO <small>+</small> DIETA</h3><p>Para quem quer unir treinamento e alimentação em uma estratégia completa.</p><ul><li>Planejamento de treino</li><li>Planejamento alimentar</li><li>Organização da rotina</li><li>Estratégias personalizadas de acordo com o objetivo</li></ul><button class="plan-select">ESCOLHER TREINO + DIETA <span>→</span></button></article>
+    </div><div class="selection-bar" id="selectionBar"><p>Plano selecionado: <strong id="selectedPlan">nenhum</strong></p><button class="button button-primary" id="continueButton" disabled>CONTINUAR <span>→</span></button></div></section>
+
+    <section class="mid-message"><p>Não existe planejamento perfeito para todo mundo.<br><strong>Existe planejamento adequado para você.</strong></p></section>
+
+    <section class="start-section" id="comece"><div class="start-copy"><p class="kicker">O PRIMEIRO PASSO É SEU</p><h2>COMECE A CONSTRUIR<br><em>SUA EVOLUÇÃO.</em></h2><p>Preencha o formulário com calma e conte a sua realidade. Quanto mais eu conhecer você, mais estratégico será o seu planejamento.</p><button class="button button-light" id="startForm">PREENCHER FORMULÁRIO <span>→</span></button></div><div class="start-aside"><b>01</b><span>SEU OBJETIVO<br>MERECE ATENÇÃO.</span></div></section>
+  </main>
+  <footer><a class="logo" href="#inicio"><span class="logo-mark">F</span><span>FRANKO <b>CONSULTORIA</b></span></a><p>Treino, alimentação e estratégia para a sua realidade.</p><span>© 2026 Franko Consultoria</span></footer>
+
+  <div class="form-overlay" id="formOverlay" aria-hidden="true"><div class="form-modal"><button class="close-form" id="closeForm" aria-label="Fechar">×</button><div class="form-intro"><p class="kicker">VAMOS COMEÇAR</p><h2>CONHEÇA O SEU<br><em>PRÓXIMO NÍVEL.</em></h2><p>Plano selecionado: <strong id="formPlan">—</strong></p></div><div class="progress-head"><span id="stepLabel">ETAPA 1 DE 5</span><b id="progressPercent">20%</b></div><div class="progress-track"><i id="progressBar"></i></div><form id="studentForm" novalidate>
+    <fieldset data-step="1"><legend>Dados pessoais</legend><p class="fieldset-help">Comece contando um pouco sobre você.</p><label>Nome completo *<input name="nome" required placeholder="Como devemos chamar você?"></label><div class="form-row"><label>Idade *<input name="idade" type="number" min="12" max="100" required placeholder="Ex.: 28"></label><label>WhatsApp *<input name="whatsapp" type="tel" required placeholder="(00) 00000-0000"></label></div><label>E-mail *<input name="email" type="email" required placeholder="voce@email.com"></label></fieldset>
+    <fieldset data-step="2" hidden><legend>Objetivo e experiência</legend><p class="fieldset-help">O que você quer conquistar?</p><label>Qual é o seu principal objetivo? *<select name="objetivo" required><option value="">Selecione uma opção</option><option>Emagrecimento</option><option>Hipertrofia</option><option>Performance esportiva</option><option>Saúde e qualidade de vida</option><option>Recomposição corporal</option></select></label><label>Como você se considera? *<select name="experiencia" required><option value="">Selecione uma opção</option><option>Iniciante</option><option>Intermediário</option><option>Avançado</option></select></label><label>Conte um pouco sobre seu objetivo<textarea name="detalhes_objetivo" rows="3" placeholder="O que você gostaria de mudar ou melhorar?"></textarea></label></fieldset>
+    <fieldset data-step="3" hidden><legend>Sua rotina</legend><p class="fieldset-help">Um bom plano precisa caber na sua vida.</p><label>Quantos dias por semana você consegue treinar? *<select name="frequencia" required><option value="">Selecione</option><option>1 a 2 dias</option><option>3 dias</option><option>4 dias</option><option>5 dias</option><option>6 ou mais dias</option></select></label><div class="form-row"><label>Profissão / rotina<input name="profissao" placeholder="Ex.: trabalho sentado"></label><label>Horas de sono<input name="sono" type="number" min="0" max="24" step=".5" placeholder="Ex.: 7"></label></div><label>Como é a sua rotina e quais são suas maiores dificuldades?<textarea name="rotina" rows="3" placeholder="Horários, deslocamento, falta de tempo..." required></textarea></label></fieldset>
+    <fieldset data-step="4" hidden><legend>Saúde e preferências</legend><p class="fieldset-help">Estas informações ajudam a tornar o planejamento mais seguro e adequado.</p><label>Possui alguma lesão, condição de saúde ou usa medicação?<textarea name="saude" rows="3" placeholder="Se não, escreva: não"></textarea></label><label>Possui alergias ou restrições alimentares?<textarea name="restricoes" rows="2" placeholder="Ex.: lactose, glúten, nenhuma"></textarea></label><label>Alimentos que gosta ou não gosta<textarea name="preferencias" rows="2" placeholder="Conte suas preferências"></textarea></label></fieldset>
+    <fieldset data-step="5" hidden><legend>Para finalizar</legend><p class="fieldset-help">Mais um passo e suas informações estarão comigo.</p><label>Como conheceu a consultoria?<select name="origem"><option>Instagram</option><option>Indicação</option><option>Google</option><option>Outro</option></select></label><label>Tem algo mais que gostaria de me contar?<textarea name="observacoes" rows="4" placeholder="Fique à vontade para escrever"></textarea></label><label class="check-label"><input type="checkbox" name="consentimento" required> Autorizo o uso das informações fornecidas para análise e elaboração do meu planejamento personalizado.</label></fieldset>
+    <div class="form-actions"><button type="button" class="back-button" id="backStep" hidden>← Voltar</button><button type="button" class="button button-primary" id="nextStep">PRÓXIMA ETAPA <span>→</span></button></div>
+  </form><div class="success-state" id="successState" hidden><div class="success-icon">✓</div><h2>INFORMAÇÕES <em>RECEBIDAS.</em></h2><p>Obrigado por confiar na Franko Consultoria. Vou analisar suas respostas e entrar em contato pelo WhatsApp informado.</p><button class="button button-primary" id="successClose">VOLTAR AO SITE</button></div></div></div>
   <script src="script.js"></script>
 </body>
 </html>
