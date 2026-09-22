@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tecnosaude — gestão inteligente de treinos, nutrição e evolução." />
+  <title>Tecnosaude | Performance e saúde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Tecnosaude início">
+        <span class="brand-mark">T</span>
+        <span><strong>Tecno</strong>saude<small>performance & saúde</small></span>
+      </a>
+      <div class="profile-card">
+        <div class="avatar">DF</div>
+        <div><strong>Dr. Franko</strong><span>Nutrição & Treino</span></div>
+        <button class="more" aria-label="Mais opções">•••</button>
+      </div>
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <p class="nav-label">MENU PRINCIPAL</p>
+        <a class="nav-link active" href="#inicio" data-view="inicio"><span>⌂</span> Visão geral</a>
+        <a class="nav-link" href="#clientes" data-view="clientes"><span>♙</span> Clientes <b>24</b></a>
+        <a class="nav-link" href="#treinos" data-view="treinos"><span>◈</span> Treinos</a>
+        <a class="nav-link" href="#dietas" data-view="dietas"><span>✦</span> Dietas</a>
+        <a class="nav-link" href="#evolucao" data-view="evolucao"><span>↗</span> Evolução</a>
+        <p class="nav-label spaced">GESTÃO</p>
+        <a class="nav-link" href="#agenda" data-view="agenda"><span>▣</span> Agenda <b class="dot">3</b></a>
+        <a class="nav-link" href="#mensagens" data-view="mensagens"><span>□</span> Mensagens <b class="dot">5</b></a>
+        <a class="nav-link" href="#configuracoes" data-view="configuracoes"><span>⚙</span> Configurações</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="help-icon">?</div><div><strong>Precisa de ajuda?</strong><span>Fale com o suporte</span></div><button class="chevron">›</button></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><i>/</i><strong id="pageName">Visão geral</strong></div>
+        <div class="top-actions"><button class="icon-button" aria-label="Buscar">⌕</button><button class="icon-button notification" aria-label="Notificações">♧<em></em></button><div class="top-avatar">DF</div></div>
+      </header>
+
+      <section class="page" id="inicio">
+        <div class="welcome-row"><div><p class="eyebrow">TERÇA-FEIRA, 22 DE SETEMBRO DE 2026</p><h1>Bom dia, Franko <span>✦</span></h1><p class="muted">Aqui está o resumo do seu workspace hoje.</p></div><button class="primary-btn" id="newClient">＋ Novo cliente</button></div>
+        <div class="metrics-grid">
+          <article class="metric-card"><div class="metric-icon blue">♙</div><div><span>Clientes ativos</span><strong>24</strong><small class="positive">↗ 12,5% <i>vs. mês passado</i></small></div><div class="spark blue-spark">⌁</div></article>
+          <article class="metric-card"><div class="metric-icon green">✓</div><div><span>Treinos concluídos</span><strong>186</strong><small class="positive">↗ 8,2% <i>vs. mês passado</i></small></div><div class="spark green-spark">⌁</div></article>
+          <article class="metric-card"><div class="metric-icon violet">◒</div><div><span>Adesão média</span><strong>87,4<small>%</small></strong><small class="positive">↗ 4,1% <i>vs. mês passado</i></small></div><div class="spark violet-spark">⌁</div></article>
+          <article class="metric-card"><div class="metric-icon orange">◷</div><div><span>Consultas hoje</span><strong>06</strong><small class="neutral">Próxima às 10:30</small></div><div class="spark orange-spark">⌁</div></article>
+        </div>
+        <div class="content-grid"><article class="panel progress-panel"><div class="panel-heading"><div><h2>Evolução dos clientes</h2><p>Acompanhamento de peso médio</p></div><select><option>Últimos 30 dias</option><option>Últimos 90 dias</option></select></div><div class="chart"><div class="chart-y"><span>85kg</span><span>80kg</span><span>75kg</span><span>70kg</span><span>65kg</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 680 230" preserveAspectRatio="none" aria-label="Gráfico de evolução"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#16a58a" stop-opacity=".25"/><stop offset="1" stop-color="#16a58a" stop-opacity="0"/></linearGradient></defs><path d="M0 164 C50 150 74 169 108 145 S165 132 195 146 S245 111 280 125 S330 88 360 109 S410 80 445 89 S500 70 530 78 S575 38 610 61 S660 35 680 42 L680 230 L0 230Z" fill="url(#fill)"/><path d="M0 164 C50 150 74 169 108 145 S165 132 195 146 S245 111 280 125 S330 88 360 109 S410 80 445 89 S500 70 530 78 S575 38 610 61 S660 35 680 42" fill="none" stroke="#16a58a" stroke-width="3" stroke-linecap="round"/><circle cx="610" cy="61" r="5" fill="#fff" stroke="#16a58a" stroke-width="3"/></svg><div class="chart-x"><span>01 Set</span><span>08 Set</span><span>15 Set</span><span>22 Set</span></div></div></div></article>
+          <article class="panel appointments"><div class="panel-heading"><div><h2>Próximos atendimentos</h2><p>Você tem 6 hoje</p></div><a href="#agenda">Ver agenda <span>→</span></a></div><div class="appointment"><div class="time">10:30<small>AM</small></div><div class="person"><div class="mini-avatar pink">AS</div><div><strong>Ana Souza</strong><span>Reavaliação física</span></div></div><span class="status confirmed">Confirmado</span></div><div class="appointment"><div class="time">13:00<small>PM</small></div><div class="person"><div class="mini-avatar blue-bg">RC</div><div><strong>Rafael Costa</strong><span>Acompanhamento nutricional</span></div></div><span class="status pending">Pendente</span></div><div class="appointment"><div class="time">15:30<small>PM</small></div><div class="person"><div class="mini-avatar yellow">LM</div><div><strong>Lucas Mendes</strong><span>Montagem de treino</span></div></div><span class="status confirmed">Confirmado</span></div><button class="outline-btn">+ Ver todos os atendimentos</button></article></div>
+        <div class="bottom-grid"><article class="panel clients-panel"><div class="panel-heading"><div><h2>Clientes recentes</h2><p>Atividade dos seus clientes</p></div><a href="#clientes">Ver todos <span>→</span></a></div><div class="table-wrap"><table><thead><tr><th>CLIENTE</th><th>OBJETIVO</th><th>ADESÃO</th><th>ÚLTIMA ATIVIDADE</th><th></th></tr></thead><tbody><tr><td><div class="person"><div class="mini-avatar pink">AS</div><div><strong>Ana Souza</strong><span>ana.souza@email.com</span></div></div></td><td><span class="tag purple">Emagrecimento</span></td><td><div class="adherence"><span style="width:94%"></span></div><strong>94%</strong></td><td>Hoje, 08:42</td><td><button class="row-more">•••</button></td></tr><tr><td><div class="person"><div class="mini-avatar blue-bg">RC</div><div><strong>Rafael Costa</strong><span>rafael.costa@email.com</span></div></div></td><td><span class="tag blue-tag">Hipertrofia</span></td><td><div class="adherence"><span style="width:81%"></span></div><strong>81%</strong></td><td>Ontem, 19:20</td><td><button class="row-more">•••</button></td></tr><tr><td><div class="person"><div class="mini-avatar yellow">LM</div><div><strong>Lucas Mendes</strong><span>lucas.mendes@email.com</span></div></div></td><td><span class="tag orange-tag">Performance</span></td><td><div class="adherence"><span style="width:76%"></span></div><strong>76%</strong></td><td>20 Set, 16:05</td><td><button class="row-more">•••</button></td></tr></tbody></table></div></article><article class="panel actions-panel"><div class="panel-heading"><div><h2>Acesso rápido</h2><p>Comece uma nova tarefa</p></div></div><button class="quick-action" data-action="treino"><span class="quick-icon green">▣</span><span><strong>Montar novo treino</strong><small>Crie um plano personalizado</small></span><b>→</b></button><button class="quick-action" data-action="dieta"><span class="quick-icon blue">✦</span><span><strong>Montar nova dieta</strong><small>Planeje refeições e macros</small></span><b>→</b></button><button class="quick-action" data-action="checkin"><span class="quick-icon violet">↗</span><span><strong>Ver check-ins</strong><small>Confira o progresso recente</small></span><b>→</b></button></article></div>
+      </section>
+      <section class="placeholder-view" id="clientes"><div class="empty-icon">♙</div><h2>Clientes</h2><p>Gerencie seus clientes, anamneses e planos personalizados por aqui.</p><button class="primary-btn" id="newClient2">＋ Cadastrar cliente</button></section>
+      <section class="placeholder-view" id="treinos"><div class="empty-icon">◈</div><h2>Treinos</h2><p>Monte treinos completos com exercícios, séries, carga e progressão.</p><button class="primary-btn">＋ Criar treino</button></section>
+      <section class="placeholder-view" id="dietas"><div class="empty-icon">✦</div><h2>Dietas</h2><p>Organize refeições, macronutrientes, substituições e suplementação.</p><button class="primary-btn">＋ Criar dieta</button></section>
+      <section class="placeholder-view" id="evolucao"><div class="empty-icon">↗</div><h2>Evolução</h2><p>Acompanhe medidas, adesão, peso e resultados dos seus clientes.</p></section>
+      <section class="placeholder-view" id="agenda"><div class="empty-icon">▣</div><h2>Agenda</h2><p>Seus próximos atendimentos e reavaliações aparecerão aqui.</p></section>
+      <section class="placeholder-view" id="mensagens"><div class="empty-icon">□</div><h2>Mensagens</h2><p>Centralize a comunicação com seus clientes.</p></section>
+      <section class="placeholder-view" id="configuracoes"><div class="empty-icon">⚙</div><h2>Configurações</h2><p>Personalize seu perfil e as preferências da Tecnosaude.</p></section>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="modal"><div class="modal"><button class="close-modal" id="closeModal">×</button><div class="modal-symbol">＋</div><h2>Novo cliente</h2><p>Cadastre os dados básicos para começar o acompanhamento.</p><form id="clientForm"><label>Nome completo<input required placeholder="Ex.: Marina Oliveira" /></label><label>E-mail<input type="email" required placeholder="cliente@email.com" /></label><label>Objetivo<select><option>Emagrecimento</option><option>Hipertrofia</option><option>Performance</option><option>Saúde geral</option></select></label><button class="primary-btn" type="submit">Cadastrar cliente</button></form></div></div>
+  <div class="toast" id="toast">Cliente cadastrado com sucesso! <span>✓</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
