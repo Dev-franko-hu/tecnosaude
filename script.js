@@ -7,30 +7,11 @@ const animationStyles = `
 @keyframes drawLine{from{width:0}to{width:170px}}
 @keyframes selectedPulse{0%{transform:scale(1)}45%{transform:scale(1.025)}100%{transform:scale(1)}}
 @keyframes successPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
-.hero-copy>*{animation:fadeUp .8s both}.hero-copy .kicker{animation-delay:.1s}.hero-copy h1{animation-delay:.2s}.hero-copy .hero-subtitle{animation-delay:.35s}.hero-copy .hero-text{animation-delay:.45s}.hero-copy .button{animation-delay:.58s}.hero-copy .hero-quote{animation-delay:.7s}.hero-art{animation:fadeIn 1.2s .35s both,floatArt 7s 1.5s ease-in-out infinite}.art-ring{animation:pulseRing 5s ease-in-out infinite}.art-line{animation:drawLine 1.2s 1s both}.button-primary{background-image:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.38) 45%,transparent 65%);background-size:220% 100%}.button-primary:hover{animation:shimmer .9s ease}.process-grid article,.plan-card{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease,border-color .25s,box-shadow .25s}.process-grid article.revealed,.plan-card.revealed{opacity:1;transform:translateY(0)}.process-grid article:nth-child(2),.plan-card:nth-child(2){transition-delay:.12s}.process-grid article:nth-child(3),.plan-card:nth-child(3){transition-delay:.24s}.process-grid article:nth-child(4){transition-delay:.36s}.plan-card.selected{animation:selectedPulse .55s ease}.selection-bar.ready{animation:fadeUp .45s both}.selection-bar.attention{animation:shake .45s ease;border-color:#d88945}@keyframes shake{25%{transform:translateX(-7px)}50%{transform:translateX(7px)}75%{transform:translateX(-4px)}}.success-icon{animation:successPop .6s cubic-bezier(.17,.89,.32,1.49) both}.problem-item{transition:background .35s,border-color .35s,transform .25s}.problem-item:hover{transform:translateY(-2px)}.problem-content p{transition:transform .35s}.problem-item.open .problem-content p{transform:translateY(0)}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+.hero-copy>*{animation:fadeUp .8s both}.hero-copy .kicker{animation-delay:.1s}.hero-copy h1{animation-delay:.2s}.hero-copy .hero-subtitle{animation-delay:.35s}.hero-copy .hero-text{animation-delay:.45s}.hero-copy .button{animation-delay:.58s}.hero-copy .hero-quote{animation-delay:.7s}.hero-art{animation:fadeIn 1.2s .35s both,floatArt 7s 1.5s ease-in-out infinite}.art-ring{animation:pulseRing 5s ease-in-out infinite}.art-line{animation:drawLine 1.2s 1s both}.button-primary{background-image:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.38) 45%,transparent 65%);background-size:220% 100%}.button-primary:hover{animation:shimmer .9s ease}.process-grid article,.plan-card{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease,border-color .25s,box-shadow .25s}.process-grid article.revealed,.plan-card.revealed{opacity:1;transform:translateY(0)}.process-grid article:nth-child(2),.plan-card:nth-child(2){transition-delay:.12s}.process-grid article:nth-child(3),.plan-card:nth-child(3){transition-delay:.24s}.process-grid article:nth-child(4){transition-delay:.36s}.plan-card.selected{animation:selectedPulse .55s ease}.selection-bar.ready{animation:fadeUp .45s both}.selection-bar.attention{animation:shake .45s ease;border-color:#d88945}@keyframes shake{25%{transform:translateX(-7px)}50%{transform:translateX(7px)}75%{transform:translateX(-4px)}}.success-icon{animation:successPop .6s cubic-bezier(.17,.89,.32,1.49) both}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 `;
 const styleTag = document.createElement('style');
 styleTag.textContent = animationStyles;
 document.head.appendChild(styleTag);
-
-const problemItems = document.querySelectorAll('.problem-item');
-problemItems.forEach(item => {
-  const trigger = item.querySelector('.problem-trigger');
-  const button = item.querySelector('button');
-  trigger.addEventListener('click', () => {
-    const willOpen = !item.classList.contains('open');
-    problemItems.forEach(problem => {
-      problem.classList.remove('open');
-      problem.querySelector('button').textContent = '+';
-      problem.querySelector('button').setAttribute('aria-label', 'Abrir item');
-    });
-    if (willOpen) {
-      item.classList.add('open');
-      button.textContent = '×';
-      button.setAttribute('aria-label', 'Fechar item');
-    }
-  });
-});
 
 const planCards = document.querySelectorAll('.plan-card');
 const selectionBar = document.getElementById('selectionBar');
